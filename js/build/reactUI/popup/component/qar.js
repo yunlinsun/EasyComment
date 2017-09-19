@@ -48,7 +48,7 @@ define(function (require, exports) {
                 return {
                     os: 'Win7',
                     server: 'Tomcat',
-                    database: 'MySql 5.5',
+                    database: 'Mysql 5.7',
                     browser: 'FF Latest',
 
                     gitk_61x: '',

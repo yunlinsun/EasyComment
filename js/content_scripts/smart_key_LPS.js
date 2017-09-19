@@ -32,7 +32,7 @@ function commentTemplate(obj) {
         server_62_r: obj.server_62x_r ? obj.server + ' ' + obj.server_62x_r : '6.2.x(R) Server',
         server_61_r: obj.server_61x_r ? obj.server + ' ' + obj.server_61x_r : '6.1.x(R) Server',
 
-        db: obj.database ? obj.database : 'MySQL 5.5.xx',
+        db: obj.database ? obj.database : 'Mysql 5.7.xx',
         gitk_master: obj.gitk_master ? obj.gitk_master : 'GIT ID of master branch',
         gitk_62x: obj.gitk_62x ? obj.gitk_62x : 'GIT ID of 62 branch',
         gitk_61x: obj.gitk_61x ? obj.gitk_61x : 'GIT ID of 61 branch',
