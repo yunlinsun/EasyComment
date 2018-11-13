@@ -60,7 +60,7 @@ define(function (require, exports) {
         data_manufactor_home: React.createElement(DataManufactorHome, null),
         master: React.createElement(DataManufactorMaster, null),
         _71: React.createElement(DataManufactor62, null),
-        _61: React.createElement(DataManufactor61, null)
+        _70: React.createElement(DataManufactor61, null)
 
     };
 

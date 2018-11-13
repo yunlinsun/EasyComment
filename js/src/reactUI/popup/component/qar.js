@@ -51,21 +51,21 @@ define(function (require, exports) {
                     database: 'Mysql 5.7',
                     browser: 'FF Latest',
 
-                    gitk_61x: '',
+                    gitk_70x: '',
                     gitk_71x: '',
                     gitk_master: '',
 
-                    server_61x: '',
+                    server_70x: '',
                     server_71x: '',
                     server_master: '',
 
                     enable_branch: {
                         master: true,
                         _71x: true,
-                        _61x: true,
+                        _70x: true,
                         master_r: true,
                         _71x_r: true,
-                        _61x_r: true
+                        _70x_r: true
                     }
                 };
             },
@@ -75,10 +75,10 @@ define(function (require, exports) {
                     isChecked: {
                         master: true,
                         _71x: true,
-                        _61x: true,
+                        _70x: true,
                         master_r: true,
                         _71x_r: true,
-                        _61x_r: true
+                        _70x_r: true
                     }
                 }
             },
@@ -99,10 +99,10 @@ define(function (require, exports) {
                             {input.singleInputWithTag('7.1.x-Private')}
                         </div>))
 
-                if (this.state.isChecked._61x)
+                if (this.state.isChecked._70x)
                     portal_branch_detail.push((
-                        <div key='61x' className='row'>
-                            {input.singleInputWithTag('6.1.x EE')}
+                        <div key='70x' className='row'>
+                            {input.singleInputWithTag('7.0.x-Private')}
                         </div>
                     ))
 
@@ -118,10 +118,10 @@ define(function (require, exports) {
                             {input.singleInputWithTag('7.1.x-Private(R)')}
                         </div>))
 
-                if (this.state.isChecked._61x_r)
+                if (this.state.isChecked._70x_r)
                     portal_branch_detail_r.push((
-                        <div key='61x' className='row'>
-                            {input.singleInputWithTag('6.1.x EE(R)')}
+                        <div key='70x' className='row'>
+                            {input.singleInputWithTag('7.0.x-Private(R)')}
                         </div>
                     ))
 
@@ -165,8 +165,8 @@ define(function (require, exports) {
                                                    checked={this.state.isChecked._71x_r}> 7.1.x-Private</input>
                                         </label>
                                         <label className="checkbox-inline">
-                                            <input type="checkbox" id='_61x_r' onChange={this.checkedHandler}
-                                                   checked={this.state.isChecked._61x_r}> 6.1.x EE</input>
+                                            <input type="checkbox" id='_70x_r' onChange={this.checkedHandler}
+                                                   checked={this.state.isChecked._70x_r}> 7.0.x-Private</input>
                                         </label>
                                     </dd>
                                 </div>
@@ -183,8 +183,8 @@ define(function (require, exports) {
                                                    checked={this.state.isChecked._71x}> 7.1.x-Private</input>
                                         </label>
                                         <label className="checkbox-inline">
-                                            <input type="checkbox" id='_61x' onChange={this.checkedHandler}
-                                                   checked={this.state.isChecked._61x}> 6.1.x EE</input>
+                                            <input type="checkbox" id='_70x' onChange={this.checkedHandler}
+                                                   checked={this.state.isChecked._70x}> 7.0.x-Private</input>
                                         </label>
                                     </dd>
                                 </div>

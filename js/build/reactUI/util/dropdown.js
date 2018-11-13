@@ -9,7 +9,7 @@ define(function (require, exports) {
 
     var qar = require('qar');
 
-    var bridge = new Map([['Master', 'master'], ['7.1.x-Private', '71x'], ['6.1.x EE', '61x'], ['Master(R)', 'master_r'], ['7.1.x-Private(R)', '71x_r'], ['6.1.x EE(R)', '61x_r']]);
+    var bridge = new Map([['Master', 'master'], ['7.1.x-Private', '71x'], ['7.0.x-Private', '70x'], ['Master(R)', 'master_r'], ['7.1.x-Private(R)', '71x_r'], ['7.0.x-Private(R)', '70x_r']]);
 
     var SingleButtonDropDown = React.createClass({
         displayName: 'SingleButtonDropDown',

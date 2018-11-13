@@ -34,7 +34,7 @@ define(function (require, exports) {
         data_manufactor_home: <DataManufactorHome/>,
         master: <DataManufactorMaster/>,
         _71: <DataManufactor62/>,
-        _61: <DataManufactor61/>
+        _70: <DataManufactor61/>
 
     }
 

@@ -11,7 +11,7 @@ define(function (require, exports) {
 
     var qar = require('qar');
 
-    var bridge = new Map([['Master', 'gitk_master'], ['7.1.x-Private', 'gitk_71x'], ['6.1.x EE', 'gitk_61x'], ['Master(R)', 'gitk_master_r'], ['7.1.x-Private(R)', 'gitk_71x_r'], ['6.1.x EE(R)', 'gitk_61x_r']]);
+    var bridge = new Map([['Master', 'gitk_master'], ['7.1.x-Private', 'gitk_71x'], ['7.0.x-Private', 'gitk_70x'], ['Master(R)', 'gitk_master_r'], ['7.1.x-Private(R)', 'gitk_71x_r'], ['7.0.x-Private(R)', 'gitk_70x_r']]);
 
     var SingleInputWithTag = React.createClass({
         displayName: 'SingleInputWithTag',
