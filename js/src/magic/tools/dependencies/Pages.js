@@ -1,5 +1,5 @@
 function Pages() {
-    this.form_62 = {
+    this.form_71 = {
         groupId: 20182,
         privateLayout: false,
         parentLayoutId: 0,
@@ -19,11 +19,11 @@ Pages.prototype={
         var friendlyURL = '/' + name;
         var groupId = obj.groupId;
 
-        this.form_62.name = name;
-        this.form_62.friendlyURL = friendlyURL;
-        this.form_62.groupId = groupId;
+        this.form_71.name = name;
+        this.form_71.friendlyURL = friendlyURL;
+        this.form_71.groupId = groupId;
 
-        invoke('/layout/add-layout', this.form_62, true);
+        invoke('/layout/add-layout', this.form_71, true);
     },
 
     createPublicPagesWithChild:function (obj, callback) {
@@ -31,19 +31,19 @@ Pages.prototype={
         var friendlyURL = '/' + name;
         var groupId = obj.groupId;
 
-        this.form_62.name = name;
-        this.form_62.friendlyURL = friendlyURL;
-        this.form_62.groupId = groupId;
-        this.form_62.number_sub = obj.number_sub;
-        this.form_62.basename_sub = obj.basename_sub;
+        this.form_71.name = name;
+        this.form_71.friendlyURL = friendlyURL;
+        this.form_71.groupId = groupId;
+        this.form_71.number_sub = obj.number_sub;
+        this.form_71.basename_sub = obj.basename_sub;
 
 
         if (!(obj.isWithChild)) {
-            this.form_62.isWithChild = false;
-            this.form_62.parentLayoutId = obj.parentLayoutId;
+            this.form_71.isWithChild = false;
+            this.form_71.parentLayoutId = obj.parentLayoutId;
         }
 
-        invoke('/layout/add-layout', this.form_62, true, callback);
+        invoke('/layout/add-layout', this.form_71, true, callback);
     }
 }
 

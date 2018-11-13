@@ -1,7 +1,7 @@
 'use strict';
 
 function Users() {
-    this.form_62x = {
+    this.form_71x = {
         companyId: '20155',
         autoPassword: true,
         password1: 'password',
@@ -31,23 +31,23 @@ function Users() {
 };
 
 Users.prototype = {
-    createBasicUser_62x: function createBasicUser_62x(obj) {
+    createBasicUser_71x: function createBasicUser_71x(obj) {
         var name = obj.name;
         var roleId = obj.roleId;
         var siteId = obj.siteId;
         var orgId = obj.orgId;
 
-        this.form_62x.screenName = name;
-        this.form_62x.emailAddress = name + '@liferay.com';
-        this.form_62x.firstName = name;
+        this.form_71x.screenName = name;
+        this.form_71x.emailAddress = name + '@liferay.com';
+        this.form_71x.firstName = name;
 
-        if (roleId != '' && roleId) this.form_62x.roleIds = roleId;
+        if (roleId != '' && roleId) this.form_71x.roleIds = roleId;
 
-        if (siteId != '' && siteId) this.form_62x.groupIds = siteId;
+        if (siteId != '' && siteId) this.form_71x.groupIds = siteId;
 
-        if (orgId != '' && orgId) this.form_62x.organizationIds = orgId;
+        if (orgId != '' && orgId) this.form_71x.organizationIds = orgId;
 
-        invoke('/user/add-user', this.form_62x, true);
+        invoke('/user/add-user', this.form_71x, true);
     },
 
     getUesrByScreenName: function getUesrByScreenName(obj, callback) {

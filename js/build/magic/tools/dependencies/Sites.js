@@ -1,7 +1,7 @@
 'use strict';
 
 function Sites() {
-    this.form_62x = {
+    this.form_71x = {
         parentGroupId: 0,
         liveGroupId: 0,
         name: '',
@@ -20,11 +20,11 @@ Sites.prototype = {
         var name = obj.name;
         var parentGroupId = obj.parentId;
 
-        this.form_62x.name = name;
+        this.form_71x.name = name;
 
-        if (parentGroupId != '' && parentGroupId) this.form_62x.parentGroupId = parentGroupId;
+        if (parentGroupId != '' && parentGroupId) this.form_71x.parentGroupId = parentGroupId;
 
-        invoke('/group/add-group', this.form_62x, true);
+        invoke('/group/add-group', this.form_71x, true);
     },
 
     getSitesByCompanyId: function getSitesByCompanyId(companyId, parentGroupId, callback) {

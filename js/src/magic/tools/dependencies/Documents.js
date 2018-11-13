@@ -1,5 +1,5 @@
 function Documents() {
-    this.form_62 = {
+    this.form_71 = {
         repositoryId: 20182,
         folderId: 0,
         sourceFileName: 'File1',
@@ -14,14 +14,14 @@ function Documents() {
 
 Documents.prototype = {
     createDocument: function (obj, callback) {
-        this.form_62.repositoryId = obj.groupId;
-        this.form_62.sourceFileName = obj.name;
-        this.form_62.title = obj.name;
+        this.form_71.repositoryId = obj.groupId;
+        this.form_71.sourceFileName = obj.name;
+        this.form_71.title = obj.name;
 
         if (callback)
-            this.form_62.version_number = obj.version_number;
+            this.form_71.version_number = obj.version_number;
 
-        invoke('/dlapp/add-file-entry', this.form_62, true, callback);
+        invoke('/dlapp/add-file-entry', this.form_71, true, callback);
     },
 
     updateDocument: function (obj, callback) {

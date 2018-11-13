@@ -1,5 +1,5 @@
 function MBCategory() {
-    this.form_62 = {
+    this.form_71 = {
         userId: 20199,
         parentCategoryId: 0,
         name: 'TestCategory',
@@ -13,17 +13,17 @@ MBCategory.prototype = {
     },
 
     createCategory: function (obj, callback) {
-        this.form_62.userId = obj.userId;
-        this.form_62.name = obj.name;
-        this.form_62.number = obj.number;
-        this.form_62.basename=obj.basename;
+        this.form_71.userId = obj.userId;
+        this.form_71.name = obj.name;
+        this.form_71.number = obj.number;
+        this.form_71.basename=obj.basename;
 
-        invoke('/mbcategory/add-category', this.form_62, true, callback);
+        invoke('/mbcategory/add-category', this.form_71, true, callback);
     }
 };
 
 function MBThread() {
-    this.form_62 = {
+    this.form_71 = {
         groupId: 20182,
         categoryId: 0,
         subject: 'TestSubject',
@@ -38,10 +38,10 @@ function MBThread() {
 
 MBThread.prototype = {
     createMBTreadOnRoot: function (obj, callback) {
-        this.form_62.groupId = obj.groupId;
-        this.form_62.subject = obj.name;
+        this.form_71.groupId = obj.groupId;
+        this.form_71.subject = obj.name;
 
-        invoke('/mbmessage/add-message', this.form_62, true, callback);
+        invoke('/mbmessage/add-message', this.form_71, true, callback);
     },
 
     createMBTreadOnCategory:function(obj,callback) {

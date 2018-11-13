@@ -76,7 +76,7 @@ function create_all_things_init() {
                                         var user = new Users();
                                         obj.name = obj.basename + i;
 
-                                        user.createBasicUser_62x(obj);
+                                        user.createBasicUser_71x(obj);
                                     }
                                 });
 

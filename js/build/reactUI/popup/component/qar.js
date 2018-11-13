@@ -52,19 +52,19 @@ define(function (require, exports) {
                     browser: 'FF Latest',
 
                     gitk_61x: '',
-                    gitk_62x: '',
+                    gitk_71x: '',
                     gitk_master: '',
 
                     server_61x: '',
-                    server_62x: '',
+                    server_71x: '',
                     server_master: '',
 
                     enable_branch: {
                         master: true,
-                        _62x: true,
+                        _71x: true,
                         _61x: true,
                         master_r: true,
-                        _62x_r: true,
+                        _71x_r: true,
                         _61x_r: true
                     }
                 };
@@ -74,10 +74,10 @@ define(function (require, exports) {
                 return {
                     isChecked: {
                         master: true,
-                        _62x: true,
+                        _71x: true,
                         _61x: true,
                         master_r: true,
-                        _62x_r: true,
+                        _71x_r: true,
                         _61x_r: true
                     }
                 };
@@ -93,10 +93,10 @@ define(function (require, exports) {
                     input.singleInputWithTag('Master')
                 ));
 
-                if (this.state.isChecked._62x) portal_branch_detail.push(React.createElement(
+                if (this.state.isChecked._71x) portal_branch_detail.push(React.createElement(
                     'div',
-                    { key: '62x', className: 'row' },
-                    input.singleInputWithTag('6.2.x EE')
+                    { key: '71x', className: 'row' },
+                    input.singleInputWithTag('7.1.x-Private')
                 ));
 
                 if (this.state.isChecked._61x) portal_branch_detail.push(React.createElement(
@@ -111,10 +111,10 @@ define(function (require, exports) {
                     input.singleInputWithTag('Master(R)')
                 ));
 
-                if (this.state.isChecked._62x_r) portal_branch_detail_r.push(React.createElement(
+                if (this.state.isChecked._71x_r) portal_branch_detail_r.push(React.createElement(
                     'div',
-                    { key: '62x', className: 'row' },
-                    input.singleInputWithTag('6.2.x EE(R)')
+                    { key: '71x', className: 'row' },
+                    input.singleInputWithTag('7.1.x-Private(R)')
                 ));
 
                 if (this.state.isChecked._61x_r) portal_branch_detail_r.push(React.createElement(
@@ -204,9 +204,9 @@ define(function (require, exports) {
                                         { className: 'checkbox-inline' },
                                         React.createElement(
                                             'input',
-                                            { type: 'checkbox', id: '_62x_r', onChange: this.checkedHandler,
-                                                checked: this.state.isChecked._62x_r },
-                                            ' 6.2.x EE'
+                                            { type: 'checkbox', id: '_71x_r', onChange: this.checkedHandler,
+                                                checked: this.state.isChecked._71x_r },
+                                            ' 7.1.x-Private'
                                         )
                                     ),
                                     React.createElement(
@@ -248,9 +248,9 @@ define(function (require, exports) {
                                         { className: 'checkbox-inline' },
                                         React.createElement(
                                             'input',
-                                            { type: 'checkbox', id: '_62x', onChange: this.checkedHandler,
-                                                checked: this.state.isChecked._62x },
-                                            ' 6.2.x EE'
+                                            { type: 'checkbox', id: '_71x', onChange: this.checkedHandler,
+                                                checked: this.state.isChecked._71x },
+                                            ' 7.1.x-Private'
                                         )
                                     ),
                                     React.createElement(

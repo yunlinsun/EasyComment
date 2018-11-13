@@ -1,7 +1,7 @@
 'use strict';
 
 function Organizations() {
-    this.form_62x = {
+    this.form_71x = {
         parentOrganizationId: 0,
         name: '',
         type: 'regular-organization',
@@ -18,11 +18,11 @@ Organizations.prototype.createBasicOrgs = function (obj) {
     var name = obj.name;
     var parentId = obj.parentId;
 
-    this.form_62x.name = name;
+    this.form_71x.name = name;
 
-    if (parentId != '' && parentId) this.form_62x.parentOrganizationId = parentId;
+    if (parentId != '' && parentId) this.form_71x.parentOrganizationId = parentId;
 
-    invoke('/organization/add-organization', this.form_62x, true);
+    invoke('/organization/add-organization', this.form_71x, true);
 };
 
 Organizations.prototype.getOrgsByCompanyId = function (companyId, parentOrganizationId, callback) {

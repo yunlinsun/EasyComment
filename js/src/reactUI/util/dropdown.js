@@ -10,10 +10,10 @@ define(function (require, exports) {
     var bridge = new Map(
         [
             ['Master', 'master'],
-            ['6.2.x EE', '62x'],
+            ['7.1.x-Private', '71x'],
             ['6.1.x EE', '61x'],
             ['Master(R)', 'master_r'],
-            ['6.2.x EE(R)', '62x_r'],
+            ['7.1.x-Private(R)', '71x_r'],
             ['6.1.x EE(R)', '61x_r']
         ]
     )

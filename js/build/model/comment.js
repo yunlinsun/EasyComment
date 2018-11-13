@@ -8,15 +8,15 @@ define(function (require, exports) {
     var chromeUtil = require('chromeUtil').chromeLocalStorage;
 
     //var isMaster = result.enable_branch.master;
-    //var is62 = result.enable_branch._62x;
+    //var is62 = result.enable_branch._71x;
     //var is61 = result.enable_branch._61x;
 
     var init_checked = {
         master: true,
-        _62x: true,
+        _71x: true,
         _61x: true,
         master_r: true,
-        _62x_r: true,
+        _71x_r: true,
         _61x_r: true
     };
 
@@ -86,16 +86,16 @@ define(function (require, exports) {
 
     function generateQAR(isChecked) {
         var rep_master = isChecked.master_r ? "${server_master_r}" + " + " + "${db}" + ". " + "Portal Master GIT ID: " + "${gitk_master_r}" + ".\n" : '';
-        var rep_62 = isChecked._62x_r ? "${server_62_r}" + " + " + "${db}" + ". " + "Portal ee-6.2.x EE GIT ID: " + "${gitk_62x_r}" + ".\n" : '';
+        var rep_71 = isChecked._71x_r ? "${server_71_r}" + " + " + "${db}" + ". " + "Portal ee-7.1.x-Private GIT ID: " + "${gitk_71x_r}" + ".\n" : '';
         var rep_61 = isChecked._61x_r ? "${server_61_r}" + " + " + "${db}" + ". " + "Portal ee-6.1.x EE GIT ID: " + "${gitk_61x_r}" + ".\n" : '';
 
-        var rep = rep_master + rep_62 + rep_61;
+        var rep = rep_master + rep_71 + rep_61;
 
         var fix_master = isChecked.master ? "${server_master}" + " + " + "${db}" + ". " + "Portal Master GIT ID: " + "${gitk_master}" + ".\n" : '';
-        var fix_62 = isChecked._62x ? "${server_62}" + " + " + "${db}" + ". " + "Portal ee-6.2.x EE GIT ID: " + "${gitk_62x}" + ".\n" : '';
+        var fix_71 = isChecked._71x ? "${server_71}" + " + " + "${db}" + ". " + "Portal ee-7.1.x-Private GIT ID: " + "${gitk_71x}" + ".\n" : '';
         var fix_61 = isChecked._61x ? "${server_61}" + " + " + "${db}" + ". " + "Portal ee-6.1.x EE GIT ID: " + "${gitk_61x}" + ".\n" : '';
 
-        var fix = fix_master + fix_62 + fix_61;
+        var fix = fix_master + fix_71 + fix_61;
 
         var content = "\n" + "Reproduced on:\n" + rep + "\n" + "Explanation.\n" + "\n" + "Fixed on:\n" + fix + "\n" + "Explanation.\n";
 

@@ -33,7 +33,7 @@ define(function (require, exports) {
     var tab_contents = {
         data_manufactor_home: <DataManufactorHome/>,
         master: <DataManufactorMaster/>,
-        _62: <DataManufactor62/>,
+        _71: <DataManufactor62/>,
         _61: <DataManufactor61/>
 
     }

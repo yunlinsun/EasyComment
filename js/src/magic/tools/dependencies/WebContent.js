@@ -1,6 +1,6 @@
 function WebContent() {
     //content: '<?xml version="1.0"?><root available-locales="en_US" default-locale="en_US"><static-content language-id="en_US"><![CDATA[<p>Test WC</p> <p>&nbsp;</p>]]></static-content></root>',
-    this.form_62x = {
+    this.form_71x = {
         groupId: 20182,
         folderId: 0,
         classNameId: 0,
@@ -43,13 +43,13 @@ WebContent.prototype = {
         var name = obj.name;
         var groupId = obj.groupId;
 
-        this.form_62x.titleMap = "{\"en_US\":\"" + name + "\"}";
-        this.form_62x.groupId = groupId;
+        this.form_71x.titleMap = "{\"en_US\":\"" + name + "\"}";
+        this.form_71x.groupId = groupId;
 
         if(callback)
-        this.form_62x.version_number=obj.version_number;
+        this.form_71x.version_number=obj.version_number;
 
-        invoke('/journalarticle/add-article', this.form_62x, true, callback);
+        invoke('/journalarticle/add-article', this.form_71x, true, callback);
     },
 
     updateWebContent: function (obj, callback) {
@@ -61,7 +61,7 @@ WebContent.prototype = {
             articleId:obj.articleId,
             folderId:0,
             groupId:obj.groupId,
-            content:this.form_62x.content
+            content:this.form_71x.content
         }
 
         if (obj.version_number != update_obj.version)

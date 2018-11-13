@@ -59,7 +59,7 @@ define(function (require, exports) {
     var tab_contents = {
         data_manufactor_home: React.createElement(DataManufactorHome, null),
         master: React.createElement(DataManufactorMaster, null),
-        _62: React.createElement(DataManufactor62, null),
+        _71: React.createElement(DataManufactor62, null),
         _61: React.createElement(DataManufactor61, null)
 
     };

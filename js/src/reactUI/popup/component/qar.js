@@ -52,19 +52,19 @@ define(function (require, exports) {
                     browser: 'FF Latest',
 
                     gitk_61x: '',
-                    gitk_62x: '',
+                    gitk_71x: '',
                     gitk_master: '',
 
                     server_61x: '',
-                    server_62x: '',
+                    server_71x: '',
                     server_master: '',
 
                     enable_branch: {
                         master: true,
-                        _62x: true,
+                        _71x: true,
                         _61x: true,
                         master_r: true,
-                        _62x_r: true,
+                        _71x_r: true,
                         _61x_r: true
                     }
                 };
@@ -74,10 +74,10 @@ define(function (require, exports) {
                 return {
                     isChecked: {
                         master: true,
-                        _62x: true,
+                        _71x: true,
                         _61x: true,
                         master_r: true,
-                        _62x_r: true,
+                        _71x_r: true,
                         _61x_r: true
                     }
                 }
@@ -93,10 +93,10 @@ define(function (require, exports) {
                             {input.singleInputWithTag('Master')}
                         </div>))
 
-                if (this.state.isChecked._62x)
+                if (this.state.isChecked._71x)
                     portal_branch_detail.push((
-                        <div key='62x' className='row'>
-                            {input.singleInputWithTag('6.2.x EE')}
+                        <div key='71x' className='row'>
+                            {input.singleInputWithTag('7.1.x-Private')}
                         </div>))
 
                 if (this.state.isChecked._61x)
@@ -112,10 +112,10 @@ define(function (require, exports) {
                             {input.singleInputWithTag('Master(R)')}
                         </div>))
 
-                if (this.state.isChecked._62x_r)
+                if (this.state.isChecked._71x_r)
                     portal_branch_detail_r.push((
-                        <div key='62x' className='row'>
-                            {input.singleInputWithTag('6.2.x EE(R)')}
+                        <div key='71x' className='row'>
+                            {input.singleInputWithTag('7.1.x-Private(R)')}
                         </div>))
 
                 if (this.state.isChecked._61x_r)
@@ -161,8 +161,8 @@ define(function (require, exports) {
                                                    checked={this.state.isChecked.master_r}> Master</input>
                                         </label>
                                         <label className="checkbox-inline">
-                                            <input type="checkbox" id='_62x_r' onChange={this.checkedHandler}
-                                                   checked={this.state.isChecked._62x_r}> 6.2.x EE</input>
+                                            <input type="checkbox" id='_71x_r' onChange={this.checkedHandler}
+                                                   checked={this.state.isChecked._71x_r}> 7.1.x-Private</input>
                                         </label>
                                         <label className="checkbox-inline">
                                             <input type="checkbox" id='_61x_r' onChange={this.checkedHandler}
@@ -179,8 +179,8 @@ define(function (require, exports) {
                                                    checked={this.state.isChecked.master}> Master</input>
                                         </label>
                                         <label className="checkbox-inline">
-                                            <input type="checkbox" id='_62x' onChange={this.checkedHandler}
-                                                   checked={this.state.isChecked._62x}> 6.2.x EE</input>
+                                            <input type="checkbox" id='_71x' onChange={this.checkedHandler}
+                                                   checked={this.state.isChecked._71x}> 7.1.x-Private</input>
                                         </label>
                                         <label className="checkbox-inline">
                                             <input type="checkbox" id='_61x' onChange={this.checkedHandler}
