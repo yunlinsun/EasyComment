@@ -103,7 +103,7 @@ define(function (require, exports) {
             chromeUtil.getLocalStorageSync('parameter_qar').then((function (err, result) {
                 var default_qar_obj = {
                     os: 'Win7 64x',
-                    server: 'Tomcat 7.0.62',
+                    server: 'Tomcat 9.0.10',
                     database: 'Mysql 5.7',
                     browser: 'FF Latest'
                 };
@@ -227,7 +227,7 @@ define(function (require, exports) {
             chromeUtil.getLocalStorageSync('parameter_qar').then((function (err, result) {
                 var default_qar_obj = {
                     os: 'Win7 64x',
-                    server: 'Tomcat 7.0.62',
+                    server: 'Tomcat 9.0.10',
                     database: 'Mysql 5.7',
                     browser: 'FF Latest'
                 };
