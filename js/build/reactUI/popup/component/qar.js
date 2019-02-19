@@ -99,6 +99,30 @@ define(function (require, exports) {
                     input.singleInputWithTag('7.1.x-Private')
                 ));
 
+                if (this.state.isChecked._71fp) portal_branch_detail.push(React.createElement(
+                    'div',
+                    { key: '71fp', className: 'row' },
+                    input.singleInputWithTag('7.1.x-Fixpack')
+                ));                    
+
+                if (this.state.isChecked._71fp) portal_branch_detail.push(React.createElement(
+                    'div',
+                    { key: '71fp', className: 'row' },
+                    input.singleInputWithTag('7.1.x-Fixpack')
+                )); 
+
+                if (this.state.isChecked._70fp) portal_branch_detail.push(React.createElement(
+                    'div',
+                    { key: '70fp', className: 'row' },
+                    input.singleInputWithTag('7.0.x-Fixpack')
+                ));                                    
+
+                if (this.state.isChecked._70fp) portal_branch_detail.push(React.createElement(
+                    'div',
+                    { key: '70fp', className: 'row' },
+                    input.singleInputWithTag('7..x-Fixpack')
+                ));
+
                 if (this.state.isChecked._70x) portal_branch_detail.push(React.createElement(
                     'div',
                     { key: '70x', className: 'row' },
@@ -116,6 +140,30 @@ define(function (require, exports) {
                     { key: '71x', className: 'row' },
                     input.singleInputWithTag('7.1.x-Private(R)')
                 ));
+
+                if (this.state.isChecked._71fp_r) portal_branch_detail_r.push(React.createElement(
+                    'div',
+                    { key: '71fp', className: 'row' },
+                    input.singleInputWithTag('7.1.x-Fixpack(R)')
+                ));    
+
+                if (this.state.isChecked._71fp_r) portal_branch_detail_r.push(React.createElement(
+                    'div',
+                    { key: '71fp', className: 'row' },
+                    input.singleInputWithTag('7.1.x-Fixpack(R)')
+                ));
+
+                if (this.state.isChecked._70fp_r) portal_branch_detail_r.push(React.createElement(
+                    'div',
+                    { key: '70fp', className: 'row' },
+                    input.singleInputWithTag('7.0.x-Fixpack(R)')
+                ));    
+
+                if (this.state.isChecked._70fp_r) portal_branch_detail_r.push(React.createElement(
+                    'div',
+                    { key: '70fp', className: 'row' },
+                    input.singleInputWithTag('7.0.x-Fixpack(R)')
+                ));                                     
 
                 if (this.state.isChecked._70x_r) portal_branch_detail_r.push(React.createElement(
                     'div',
@@ -214,11 +262,31 @@ define(function (require, exports) {
                                         { className: 'checkbox-inline' },
                                         React.createElement(
                                             'input',
+                                            { type: 'checkbox', id: '_71fp_r', onChange: this.checkedHandler,
+                                                checked: this.state.isChecked._71fp_r },
+                                            ' 7.1.x-Fixpack'
+                                        )
+                                    ),                                    
+                                    React.createElement(
+                                        'label',
+                                        { className: 'checkbox-inline' },
+                                        React.createElement(
+                                            'input',
                                             { type: 'checkbox', id: '_70x_r', onChange: this.checkedHandler,
                                                 checked: this.state.isChecked._70x_r },
                                             ' 7.0.x-Private'
                                         )
-                                    )
+                                    ),
+                                    React.createElement(
+                                        'label',
+                                        { className: 'checkbox-inline' },
+                                        React.createElement(
+                                            'input',
+                                            { type: 'checkbox', id: '_70fp_r', onChange: this.checkedHandler,
+                                                checked: this.state.isChecked._70fp_r },
+                                            ' 7.0.x-Fixpack'
+                                        )
+                                    )                                    
                                 )
                             ),
                             portal_branch_detail_r,
@@ -258,11 +326,31 @@ define(function (require, exports) {
                                         { className: 'checkbox-inline' },
                                         React.createElement(
                                             'input',
+                                            { type: 'checkbox', id: '_71fp', onChange: this.checkedHandler,
+                                                checked: this.state.isChecked._71fp },
+                                            ' 7.1.x-Fixpack'
+                                        )
+                                    ),                                    
+                                    React.createElement(
+                                        'label',
+                                        { className: 'checkbox-inline' },
+                                        React.createElement(
+                                            'input',
                                             { type: 'checkbox', id: '_70x', onChange: this.checkedHandler,
                                                 checked: this.state.isChecked._70x },
                                             ' 7.0.x-Private'
                                         )
-                                    )
+                                    ),
+                                    React.createElement(
+                                        'label',
+                                        { className: 'checkbox-inline' },
+                                        React.createElement(
+                                            'input',
+                                            { type: 'checkbox', id: '_70fp', onChange: this.checkedHandler,
+                                                checked: this.state.isChecked._70fp },
+                                            ' 7.1.x-Fixpack'
+                                        )
+                                    )                                    
                                 )
                             ),
                             portal_branch_detail

@@ -11,10 +11,14 @@ define(function (require, exports) {
         [
             ['Master', 'master'],
             ['7.1.x-Private', '71x'],
+            ['7.1.x-FixPack', '71fp'],
             ['7.0.x-Private', '70x'],
+            ['7.0.x-FixPack', '70fp'],
             ['Master(R)', 'master_r'],
             ['7.1.x-Private(R)', '71x_r'],
-            ['7.0.x-Private(R)', '70x_r']
+            ['7.1.x-FixPack(R)', '71fp_r'],
+            ['7.0.x-Private(R)', '70x_r'],
+            ['7.0.x-FixPack(R)', '70x_fp']
         ]
     )
 

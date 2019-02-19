@@ -13,10 +13,14 @@ define(function (require, exports) {
         [
             ['Master', 'gitk_master'],
             ['7.1.x-Private', 'gitk_71x'],
+            ['7.1.x-FixPack', 'gitk_71fp'],
             ['7.0.x-Private', 'gitk_70x'],
+            ['7.0.x-FixPack', 'gitk_70fp'],
             ['Master(R)', 'gitk_master_r'],
             ['7.1.x-Private(R)', 'gitk_71x_r'],
-            ['7.0.x-Private(R)', 'gitk_70x_r']
+            ['7.1.x-FixPack(R)', 'gitk_71fp_r'],
+            ['7.0.x-Private(R)', 'gitk_70x_r'],
+            ['7.0.x-FixPack(R)', 'gitk_70fp_r'],
         ]
     );
 

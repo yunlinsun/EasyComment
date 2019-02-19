@@ -99,10 +99,23 @@ define(function (require, exports) {
                             {input.singleInputWithTag('7.1.x-Private')}
                         </div>))
 
+                if (this.state.isChecked._71fp)
+                    portal_branch_detail.push((
+                        <div key='71fp' className='row'>
+                            {input.singleInputWithTag('7.1.x-FixPack')}
+                        </div>))                        
+
                 if (this.state.isChecked._70x)
                     portal_branch_detail.push((
                         <div key='70x' className='row'>
                             {input.singleInputWithTag('7.0.x-Private')}
+                        </div>
+                    ))
+
+                if (this.state.isChecked._70fp)
+                    portal_branch_detail.push((
+                        <div key='70fp' className='row'>
+                            {input.singleInputWithTag('7.0.x-FixPack')}
                         </div>
                     ))
 
@@ -118,12 +131,25 @@ define(function (require, exports) {
                             {input.singleInputWithTag('7.1.x-Private(R)')}
                         </div>))
 
+                if (this.state.isChecked._71fp_r)
+                    portal_branch_detail_r.push((
+                        <div key='71fp' className='row'>
+                            {input.singleInputWithTag('7.1.x-FixPack(R)')}
+                        </div>))                        
+
                 if (this.state.isChecked._70x_r)
                     portal_branch_detail_r.push((
                         <div key='70x' className='row'>
                             {input.singleInputWithTag('7.0.x-Private(R)')}
                         </div>
                     ))
+
+                if (this.state.isChecked._70fp_r)
+                    portal_branch_detail_r.push((
+                        <div key='70fp' className='row'>
+                            {input.singleInputWithTag('7.0.x-FixPack(R)')}
+                        </div>
+                    ))                    
 
                 return (
                     <div className='container-fluid'>
@@ -165,9 +191,17 @@ define(function (require, exports) {
                                                    checked={this.state.isChecked._71x_r}> 7.1.x-Private</input>
                                         </label>
                                         <label className="checkbox-inline">
+                                            <input type="checkbox" id='_71fp_r' onChange={this.checkedHandler}
+                                                   checked={this.state.isChecked._71fp_r}> 7.1.x-FixPack</input>
+                                        </label>                                        
+                                        <label className="checkbox-inline">
                                             <input type="checkbox" id='_70x_r' onChange={this.checkedHandler}
                                                    checked={this.state.isChecked._70x_r}> 7.0.x-Private</input>
                                         </label>
+                                        <label className="checkbox-inline">
+                                            <input type="checkbox" id='_70fp_r' onChange={this.checkedHandler}
+                                                   checked={this.state.isChecked._70fp_r}> 7.0.x-FixPack</input>
+                                        </label>                                        
                                     </dd>
                                 </div>
                                 {portal_branch_detail_r}
@@ -183,9 +217,17 @@ define(function (require, exports) {
                                                    checked={this.state.isChecked._71x}> 7.1.x-Private</input>
                                         </label>
                                         <label className="checkbox-inline">
+                                            <input type="checkbox" id='_71fp' onChange={this.checkedHandler}
+                                                   checked={this.state.isChecked._71fp}> 7.1.x-FixPack</input>
+                                        </label>                                        
+                                        <label className="checkbox-inline">
                                             <input type="checkbox" id='_70x' onChange={this.checkedHandler}
                                                    checked={this.state.isChecked._70x}> 7.0.x-Private</input>
                                         </label>
+                                        <label className="checkbox-inline">
+                                            <input type="checkbox" id='_70fp' onChange={this.checkedHandler}
+                                                   checked={this.state.isChecked._70fp}> 7.0.x-FixPack</input>
+                                        </label>                                        
                                     </dd>
                                 </div>
                                 {portal_branch_detail}
