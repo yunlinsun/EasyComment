@@ -114,17 +114,17 @@ define(function (require, exports) {
     function generateQAR(isChecked) {
         var rep_master = (isChecked.master_r) ? "${server_master_r}" + " + " + "${db}" + ". " + "Portal Master GIT ID: " + "${gitk_master_r}" + ".\n" : '';
         var rep_71 = (isChecked._71x_r) ? "${server_71_r}" + " + " + "${db}" + ". " + "Portal 7.1.x-Private GIT ID: " + "${gitk_71x_r}" + ".\n" : '';
-        var rep_71fp = (isChecked._71fp_r) ? "${server_71_r}" + " + " + "${db}" + ". " + "Portal 7.1.10.1 DXP SP1" + "fp-dxp-6-7110" + ".\n" : '';
+        var rep_71fp = (isChecked._71fp_r) ? "${server_71fp_r}" + " + " + "${db}" + ". " + "Portal 7.1.10.1 DXP SP1" + "+ fp-dxp-6-7110" + ".\n" : '';
         var rep_70 = (isChecked._70x_r) ? "${server_70_r}" + " + " + "${db}" + ". " + "Portal 7.0.x-Private GIT ID: " + "${gitk_70x_r}" + ".\n" : '';
-        var rep_70fp = (isChecked._70fp_r) ? "${server_70_r}" + " + " + "${db}" + ". " + "Portal 7.0.10.10 DXP SP10" + "fp-de-71-7010" + ".\n" : '';
+        var rep_70fp = (isChecked._70fp_r) ? "${server_70fp_r}" + " + " + "${db}" + ". " + "Portal 7.0.10.10 DXP SP10" + "+ fp-de-71-7010" + ".\n" : '';
 
         var rep = rep_master + rep_71 + rep_70 + rep_71fp + rep_70fp;
 
         var fix_master = (isChecked.master) ? "${server_master}" + " + " + "${db}" + ". " + "Portal Master GIT ID: " + "${gitk_master}" + ".\n" : '';
         var fix_71 = (isChecked._71x) ? "${server_71}" + " + " + "${db}" + ". " + "Portal 7.1.x-Private GIT ID: " + "${gitk_71x}" + ".\n" : '';
-        var fix_71fp = (isChecked._71fp) ? "${server_71}" + " + " + "${db}" + ". " + "Portal 7.1.10.1 DXP SP1" + "fp-dxp-6-7110" + ".\n" : '';
+        var fix_71fp = (isChecked._71fp) ? "${server_71fp}" + " + " + "${db}" + ". " + "Portal 7.1.10.1 DXP SP1" + "+ fp-dxp-6-7110" + ".\n" : '';
         var fix_70 = (isChecked._70x) ? "${server_70}" + " + " + "${db}" + ". " + "Portal 7.0.x-Private GIT ID: " + "${gitk_70x}" + ".\n" : '';
-        var fix_70fp = (isChecked._70fp) ? "${server_70}" + " + " + "${db}" + ". " + "Portal 7.0.10.10 DXP SP10" + "fp-de-71-7010" + ".\n" : '';
+        var fix_70fp = (isChecked._70fp) ? "${server_70fp}" + " + " + "${db}" + ". " + "Portal 7.0.10.10 DXP SP10" + "+ fp-de-71-7010" + ".\n" : '';
 
         var fix = fix_master + fix_71 + fix_70 + fix_71fp + fix_70fp;
 
