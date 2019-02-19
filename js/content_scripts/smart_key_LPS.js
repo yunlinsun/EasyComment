@@ -39,10 +39,13 @@ function commentTemplate(obj) {
         db: obj.database ? obj.database : 'Mysql 5.7.xx',
         gitk_master: obj.gitk_master ? obj.gitk_master : 'GIT ID of master branch',
         gitk_71x: obj.gitk_71x ? obj.gitk_71x : 'GIT ID of 71 branch',
+        gitk_71fp: obj.gitk_71fp ? obj.gitk_71fp : 'GIT ID of 71 branch',
+        gitk_70fp: obj.gitk_70fp ? obj.gitk_70fp : 'GIT ID of 71 branch',
         gitk_70x: obj.gitk_70x ? obj.gitk_70x : 'GIT ID of 70 branch',
         gitk_master_r: obj.gitk_master_r ? obj.gitk_master_r : 'GIT ID of master(R) branch',
-        gitk_71x_r: obj.gitk_71x_r ? obj.gitk_71x_r : 'GIT ID of 62(R) branch',
-        gitk_70x_r: obj.gitk_70x_r ? obj.gitk_70x_r : 'GIT ID of 61(R) branch'
+        gitk_71x_r: obj.gitk_71x_r ? obj.gitk_71x_r : 'GIT ID of 71(R) branch',
+        gitk_71fp_r: obj.gitk_71fp_r ? obj.gitk_71fp_r : 'GIT ID of 71FP(R) branch',
+        gitk_70x_r: obj.gitk_70x_r ? obj.gitk_70x_r : 'GIT ID of 70(R) branch'
     };
 
     comment_compile(metadata, 'qar_obj');

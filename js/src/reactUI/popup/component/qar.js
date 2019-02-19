@@ -53,18 +53,26 @@ define(function (require, exports) {
 
                     gitk_70x: '',
                     gitk_71x: '',
+                    gitk_71fp: '',
+                    gitk_70fp: '',
                     gitk_master: '',
 
                     server_70x: '',
                     server_71x: '',
+                    server_71fp: '',
+                    server_70fp: '',
                     server_master: '',
 
                     enable_branch: {
                         master: true,
                         _71x: true,
+                        _71fp: true,
+                        _70fp: true,
                         _70x: true,
                         master_r: true,
                         _71x_r: true,
+                        _71fp_r: true,
+                        _70fp_r: true,
                         _70x_r: true
                     }
                 };
@@ -75,9 +83,13 @@ define(function (require, exports) {
                     isChecked: {
                         master: true,
                         _71x: true,
+                        _71fp: true,
+                        _70fp: true,
                         _70x: true,
                         master_r: true,
                         _71x_r: true,
+                        _71fp_r: true,
+                        _70fp_r: true
                         _70x_r: true
                     }
                 }
